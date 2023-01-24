@@ -140,6 +140,7 @@ GameObject:
   - component: {fileID: 120005919}
   - component: {fileID: 120005923}
   - component: {fileID: 120005922}
+  - component: {fileID: 120005924}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -278,10 +279,34 @@ MonoBehaviour:
       m_Calls: []
   onHoverEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 120005924}
+        m_TargetAssemblyTypeName: NetworkHoverColor, Assembly-CSharp
+        m_MethodName: startNetworkedHoverColor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onHoverExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 120005924}
+        m_TargetAssemblyTypeName: NetworkHoverColor, Assembly-CSharp
+        m_MethodName: endNetworkedHoverColor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &120005921
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -335,6 +360,19 @@ MonoBehaviour:
   sceneViewId: 1
   InstantiationId: 0
   isRuntimeInstantiated: 0
+--- !u!114 &120005924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 120005914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7fe7ed2dd5d7e249a6669090144d0a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hoverMaterial: {fileID: 2100000, guid: d808c628536649eaa61f2a2f2d16c6cc, type: 2}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
